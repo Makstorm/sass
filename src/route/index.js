@@ -8,18 +8,8 @@ const router = express.Router()
 // router.get Створює нам один ентпоїнт
 
 // ↙️ тут вводимо шлях (PATH) до сторінки
+
 router.get('/', function (req, res) {
-  // res.render генерує нам HTML сторінку
-
-  // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
-    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'index',
-  })
-  // ↑↑ сюди вводимо JSON дані
-})
-
-router.get('/apple', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
@@ -27,7 +17,7 @@ router.get('/apple', function (req, res) {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'apple',
     page: {
-      title: "Apple"
+      title: 'Apple',
     },
     header: {
       links: [
@@ -115,7 +105,7 @@ router.get('/apple', function (req, res) {
       },
     },
     card: {
-      title: 'card',
+      title: 'Card',
       descriptions:
         'Get up to 3% Daily Cash back with every purchase.',
       link: {
